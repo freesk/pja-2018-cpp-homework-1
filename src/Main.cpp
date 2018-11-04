@@ -1,7 +1,3 @@
-//============================================================================
-// Author      : Dmytro Kurbatov
-//============================================================================
-
 #include <iostream>
 using namespace std;
 
@@ -15,11 +11,14 @@ int main() {
 	cout << "Enter a number: ";
 	cin >> n;
 
-	min = n;
-	max = n;
+	// we always take 0 as exit from the program
+	if (n != 0) {
+		min = n;
+		max = n;
 
-	minCount++;
-	maxCount++;
+		minCount++;
+		maxCount++;
+	}
 
 	while (n != 0) {
 		cout << "Enter a number: ";
